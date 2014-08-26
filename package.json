@@ -1,0 +1,20 @@
+{
+  "name": "favket",
+  "version": "0.1.0",
+  "description": "Favourites, without the fuss.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "twitter": "0.2.9",
+    "pocket-api": "0.2.2"
+  },
+  "keywords": [
+    "pocket",
+    "twitter",
+    "favs"
+  ],
+  "author": "Jamie Hoyle",
+  "license": "ISC"
+}
