@@ -30,7 +30,7 @@ twitter.stream('user', {
                 var urlToPocket = data.target_object.entities.urls[0].expanded_url;
 
                 //Check if the URL is excluded or the tweet has already been handled
-                callback((pocketedTweets.indexOf(data.target_object.id_str) === -1 || config.excluded.indexOf(url.parse(urlToPocket).hostname) === -1) ? null : 'fail', urlToPocket);
+                callback((pocketedTweets.indexOf(data.target_object.id_str) === -1 && config.excluded.indexOf(url.parse(urlToPocket).hostname) === -1) ? null : 'fail', urlToPocket);
             },
             function(urlToPocket, callback){
                 var tweetID = data.target_object.id_str;
