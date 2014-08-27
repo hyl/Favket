@@ -16,6 +16,8 @@ config.twitter.consumer_secret = 'consumer_secret';
 config.twitter.access_token_key = 'access_token_key';
 //Twitter access token secret
 config.twitter.access_token_secret = 'access_token_secret';
+//Your Twitter username, without the @
+config.twitter.username = 'username';
 
 //Pocket details
 config.pocket = {};

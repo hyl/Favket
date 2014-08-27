@@ -23,8 +23,8 @@ twitter.stream('user', {
     stream.on('data', function(data) {
         async.waterfall([
             function(callback){
-                //Check if the event is a favourite and if the tweet has a url, if not jump out
-                callback((data.event == 'favorite' && data.target_object.entities.urls) ? null : 'fail');
+                //Check if the event is a favourite, the event comes from your username, and if the tweet has a url. If not jump out
+                callback((data.event == 'favorite' && data.source.screen_name == config.twitter.username && data.target_object.entities.urls) ? null : 'fail');
             },
             function(callback){
                 var urlToPocket = data.target_object.entities.urls[0].expanded_url;
