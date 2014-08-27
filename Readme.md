@@ -19,10 +19,11 @@ To use Favket, you need to have [Node.js](http://nodejs.org/) and [Heroku Toolbe
 Favket is a Node app configured for Heroku. Here's how to get started:  
 1. Clone the repository.  
 2. Create a new Heroku instance: `heroku create`.  
-3. In *config.js*, edit the Pocket and Twitter authentication details, and add your own. See the "Authenticating with Pocket" and "Authenticating with Twitter" sections below on how to do this.
-4. Run `git push heroku master`.  
-5. Check one (only one is required) instance of the app is running: `heroku worker:scale web=1`  
-6. Voila, you're good to go! Go and test out your shiny new bot out.
+3. Copy `config.example.js` to `config.js`.  
+4. In `config.js`, edit the Pocket and Twitter authentication details, and add your own. See the "Authenticating with Pocket" and "Authenticating with Twitter" sections below on how to do this.
+5. Run `git push heroku master`.  
+6. Check one (only one is required) instance of the app is running: `heroku worker:scale web=1`  
+7. Voila, you're good to go! Go and test out your shiny new bot out.
 
 ###But I don't want to Pocket links from xyz!  
 Not a problem. In config.js, simply change `config.excluded` to add the hostnames of the sites you don't ever want to send to your Pocket via a favourite. It's populated with twitter.com by default, so links to tweets aren't sent: you can add more at your will (I'd recommend adding dailymail.co.uk for starters).
