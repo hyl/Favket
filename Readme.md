@@ -12,6 +12,9 @@ When you find a tweet with a URL you want to add to your Pocket, simply favourit
 2. The tweet is unfavourited within a second.  
 If you want your favourite to be visible, simply refavourite the tweet. The way that Twitter's mobile apps handle favourites mean that the golden star may still appear as if you are still favouriting the tweet, but that isn't the case on their servers - simply tap to remove the star, then tap again to publicly favourite the tweet. 
 
+###Prerequisities
+To use Favket, you need to have [Node.js](http://nodejs.org/) and [Heroku Toolbelt](https://toolbelt.heroku.com/) installed on your system. You also need to have [Pocket](https://getpocket.com) and [Twitter](https://twitter.com) accounts in order for the tool to be useful.  
+
 ###How do I set it up?
 Favket is a Node app configured for Heroku. Here's how to get started:  
 1. Clone the repository.  
@@ -40,3 +43,6 @@ Not a problem. In config.js, simply change `config.excluded` to add the hostname
 
 ###Next steps
 I want to add more read-it-later services to Favket. If you want a hosted version of this service, give me a bell on [Twitter](http://twitter.com/mightyshakerjnr).
+
+###It doesn't work!
+Oh no! File an [Issue](https://github.com/hyl/Favket/issues), with a link to the tweet you're trying to favouite. In testing, links from tweets made by *private accounts* aren't saved to Pocket.
