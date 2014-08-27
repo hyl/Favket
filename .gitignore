@@ -21,3 +21,5 @@ build/Release
 
 #Modules
 node_modules
+
+config.js

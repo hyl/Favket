@@ -4,7 +4,7 @@ var config = {};
 //URLs that you don't want to Pocket. Only contains twitter.com by default (so fav'd links to tweets aren't Pocketed)
 config.excluded = [
   'twitter.com'
-]
+];
 
 //Twitter details
 config.twitter = {};
