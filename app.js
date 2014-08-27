@@ -15,7 +15,7 @@ var twitter = new twitter({
 
 //array for tweet IDs
 var pocketedTweets = [],
-    debugMode      = true;
+    debugMode      = false;
 
 twitter.stream('user', {
     with: 'user'
@@ -65,9 +65,3 @@ twitter.stream('user', {
         });
     });
 });
-
-//search arrays
-function include(arr, obj) {
-    return (arr.indexOf(obj) != -1);
-}
-
