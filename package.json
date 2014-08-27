@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "twitter": "0.2.9",
-    "pocket-api": "0.2.2"
+    "async": "^0.9.0",
+    "pocket-api": "0.2.2",
+    "twitter": "0.2.9"
   },
   "keywords": [
     "pocket",
